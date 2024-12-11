@@ -70,15 +70,6 @@
 			text-align: center;
 		}
 
-		.navbar-brand h1:hover {
-			font-size: 35px;
-		  color: black;
-			background-color: darkgrey;
-			width: 120%;
-			text-align: center;
-			font-weight: 700;
-		}
-
 		.navbar-dark .navbar-nav .nav-link {
 		    color: rgb(255, 255, 255);
 		}
@@ -436,6 +427,7 @@
 }
 
 .contact-form p {
+  font-size: 16px;
   color: white;
 }
 
@@ -495,6 +487,11 @@
   .contact-form h1 {
     font-size: 35px;
   }
+
+  .contact-form p {
+    font-size: 13px;
+    color: white;
+  }
 }
 
 @media screen and (max-width: 700px){
@@ -520,6 +517,11 @@
 
   .contact-form h1 {
     font-size: 30px;
+  }
+
+  .contact-form p {
+    font-size: 10px;
+    color: white;
   }
 }
 
@@ -602,6 +604,10 @@
 
   .introduction {
     padding: 60px;
+  }
+  .contact-form p {
+    font-size: 7px;
+    color: white;
   }
 }
 
@@ -900,7 +906,11 @@
         </div>
         <div class="software">
           <img src="recursos/visuales/svg/autodesk-4.svg" alt="SketchBook" class="icono">
-          <p>AutoDesk SketchBook </p>
+          <p>AutoDesk SketchBook</p>
+        </div>
+        <div class="software">
+          <img src="recursos/visuales/svg/xd.png" alt="XD" class="icono">
+          <p>Adobe XD</p>
         </div>
       </div>
     </section>
@@ -910,17 +920,17 @@
     <div class="container-form" id="contacto">
         <form class="contact-form">
           <h1>Contacto</h1>
-          <p>Correo: samuperezcepedav3.0@gmail.com</p>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <p><strong>Correo</strong>: samuperezcepedav3.0@gmail.com</p>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
           
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="email" id="email" name="email" placeholder="Tu Email" required>
           
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" placeholder="Write your message..." rows="5" required></textarea>
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
           
-          <button type="submit">Send</button>
+          <button type="submit">Enviar</button>
         </form>
       </div>
   </div>
